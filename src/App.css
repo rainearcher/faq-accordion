@@ -5,6 +5,9 @@
   background-color: hsl(275, 100%, 97%);
   width: 100vw;
   height: 100vh;
+  overflow : auto;
+  display: grid;
+  grid-template-rows: 20% auto 5%;
 }
 
 @media only screen and (max-width: 376px) {
@@ -23,10 +26,9 @@
   background-color: hsl(0, 0%, 100%);
   width: 75%;
   height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  grid-row: 2 / 2;
+  justify-self: center;
+  align-self: start;
   border-radius: 10px;
   padding: 25px;
 }
@@ -76,8 +78,11 @@
 
 
 .attribution { 
+  align-self: end;
+  grid-row: 3 / 3;
   font-size: 11px; 
   text-align: center; 
+  margin: 10px auto;
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
