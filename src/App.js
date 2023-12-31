@@ -9,13 +9,26 @@ function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) 
   const displayStyle = showAnswer ? "inline-block" : "none"
   const borderTopStyle = index == 0 ? "hidden" : "solid";
 
-  function onClick() {
-    onQuestionClick(index);
+  function onKeyDown(event) {
+    if (event.key === 'Tab')
+      return;
+    event.preventDefault();
+    if (event.key === 'Enter' || event.key === ' ') {
+      onQuestionClick(index);
+    }
   }
 
   return (
     <div className="QuestionAnswer" style={{borderTopStyle: borderTopStyle}}>
-      <h2 onClick={onClick}><p>{question}</p><img src={icon}/></h2>
+      <h2 
+        onClick={() => {onQuestionClick(index)}} 
+        onKeyDown={onKeyDown} 
+        tabIndex={"0"}
+        role='tab'
+      >
+        <p>{question}</p>
+        <img src={icon}/>
+      </h2>
       <div className="answer" style={{display: displayStyle}}>
         {answer}
       </div>

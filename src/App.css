@@ -60,7 +60,7 @@
   grid-column: 1 / 1;
 }
 
-.card h2:hover p {
+.card h2:hover p, .card h2:focus p {
   color: hsl(278, 64%, 53%);
 }
 
