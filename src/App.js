@@ -4,12 +4,17 @@ import minusIcon from './icon-minus.svg';
 import plusIcon from './icon-plus.svg'
 import { useState } from 'react';
 
-function QuestionAnswer({question, answer, showAnswer}) {
+function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) {
   const icon = showAnswer ? minusIcon : plusIcon;
   const displayStyle = showAnswer ? "inline-block" : "none"
+
+  function onClick() {
+    onQuestionClick(index);
+  }
+
   return (
     <div className="QuestionAnswer">
-      <h2><p>{question}</p><img src={icon}/></h2>
+      <h2 onClick={onClick}><p>{question}</p><img src={icon}/></h2>
       <div className="answer" style={{display: displayStyle}}>
         {answer}
       </div>
@@ -45,6 +50,14 @@ function App() {
       showAnswer: false
     }
   ]);
+
+  function onQuestionClick(index) {
+    const newQuestionAnswers = questionAnswers.map((qa, i) => {
+      return i == index ? {question: qa.question, answer: qa.answer, showAnswer: !qa.showAnswer } : qa;
+    });
+    setQuestionAnswers(newQuestionAnswers);
+  }
+  
   return (
     <div className="App">
       <div className="card">
@@ -54,7 +67,7 @@ function App() {
             question={question}
             answer={answer}
             showAnswer={showAnswer}
-            onClick={onQuestionClick}
+            onQuestionClick={onQuestionClick}
             index={index}
           />)
         })}
