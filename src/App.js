@@ -6,8 +6,9 @@ import { useState } from 'react';
 
 function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) {
   const icon = showAnswer ? minusIcon : plusIcon;
+  const iconText = showAnswer ? "minus icon" : "plus icon";
   const displayStyle = showAnswer ? "inline-block" : "none"
-  const borderTopStyle = index == 0 ? "hidden" : "solid";
+  const borderTopStyle = index === 0 ? "hidden" : "solid";
 
   function onKeyDown(event) {
     if (event.key === 'Tab')
@@ -27,7 +28,7 @@ function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) 
         role='tab'
       >
         <p>{question}</p>
-        <img src={icon}/>
+        <img src={icon} alt={iconText}/>
       </h2>
       <div className="answer" style={{display: displayStyle}}>
         {answer}
@@ -67,7 +68,7 @@ function App() {
 
   function onQuestionClick(index) {
     const newQuestionAnswers = questionAnswers.map((qa, i) => {
-      return i == index ? {question: qa.question, answer: qa.answer, showAnswer: !qa.showAnswer } : qa;
+      return i === index ? {question: qa.question, answer: qa.answer, showAnswer: !qa.showAnswer } : qa;
     });
     setQuestionAnswers(newQuestionAnswers);
   }
@@ -75,7 +76,7 @@ function App() {
   return (
     <div className="App">
       <div className="card">
-        <h1><img src={starIcon}/>FAQs</h1>
+        <h1><img src={starIcon} alt='star icon'/>FAQs</h1>
         {questionAnswers.map(({question, answer, showAnswer}, index) => {
           return (<QuestionAnswer
             question={question}
