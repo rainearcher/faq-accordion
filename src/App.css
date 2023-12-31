@@ -24,7 +24,7 @@
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  width: 75%;
+  width: min(75%, 475px);
   height: fit-content;
   grid-row: 2 / 2;
   justify-self: center;
@@ -65,6 +65,7 @@
 }
 
 .card h2 img {
+  justify-self: end;
   grid-column: 3 / 3;
 }
 
