@@ -2,18 +2,27 @@ import './App.css';
 import starIcon from './icon-star.svg';
 import minusIcon from './icon-minus.svg';
 
+function QuestionAnswer({question, answer}) {
+  return (
+    <div className="QuestionAnswer">
+      <h2><p>{question}</p><img src={minusIcon}/></h2>
+      <div className="answer">
+        {answer}
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <div className="card">
-        
         <h1><img src={starIcon}/>FAQs</h1>
-        <h2><p>What is Frontend Mentor, and how will it help me? </p><img src={minusIcon}/></h2>
-        <div className="answer">
-          Frontend Mentor offers realistic coding challenges to help developers improve their
-          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-          all levels and ideal for portfolio building.
-        </div>
+        <QuestionAnswer
+        question="What is Frontend Mentor, and how will it help me?"
+        answer="Frontend Mentor offers realistic coding challenges to help developers improve their
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+        all levels and ideal for portfolio building."/>
         Is Frontend Mentor free?
         Yes, Frontend Mentor offers both free and premium coding challenges, with the free
         option providing access to a range of projects suitable for all skill levels.
