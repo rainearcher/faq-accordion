@@ -27,8 +27,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 25px;
+}
+
+.card h1 {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.card h1 img {
+  width: 25px;
+  margin-right: 20px; 
 }
 
 .attribution { 

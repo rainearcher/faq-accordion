@@ -1,11 +1,12 @@
 import './App.css';
+import starIcon from './icon-star.svg'
 
 function App() {
   return (
     <div className="App">
       <div className="card">
         
-        FAQs
+        <h1><img src={starIcon}/>FAQs</h1>
         What is Frontend Mentor, and how will it help me?
         Frontend Mentor offers realistic coding challenges to help developers improve their
         frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
