@@ -12,13 +12,13 @@
 
 @media only screen and (max-width: 376px) {
   .App {
-    background-image: url("../public/assets/images/background-pattern-mobile.svg");
+    background-image: url("./images/background-pattern-mobile.svg");
   }
 }
 
 @media only screen and (min-width: 376px) {
   .App {
-    background-image: url("../public/assets/images/background-pattern-desktop.svg");
+    background-image: url("./images/background-pattern-desktop.svg");
   }
 }
 

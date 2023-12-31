@@ -1,7 +1,7 @@
 import './App.css';
-import starIcon from './icon-star.svg';
-import minusIcon from './icon-minus.svg';
-import plusIcon from './icon-plus.svg'
+import starIcon from './images/icon-star.svg';
+import minusIcon from './images/icon-minus.svg';
+import plusIcon from './images/icon-plus.svg'
 import { useState } from 'react';
 
 function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) {
