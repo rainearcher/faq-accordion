@@ -9,9 +9,11 @@ function App() {
         
         <h1><img src={starIcon}/>FAQs</h1>
         <h2><p>What is Frontend Mentor, and how will it help me? </p><img src={minusIcon}/></h2>
-        Frontend Mentor offers realistic coding challenges to help developers improve their
-        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-        all levels and ideal for portfolio building.
+        <div className="answer">
+          Frontend Mentor offers realistic coding challenges to help developers improve their
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+          all levels and ideal for portfolio building.
+        </div>
         Is Frontend Mentor free?
         Yes, Frontend Mentor offers both free and premium coding challenges, with the free
         option providing access to a range of projects suitable for all skill levels.
