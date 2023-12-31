@@ -58,6 +58,10 @@
   grid-column: 1 / 1;
 }
 
+.card h2:hover p {
+  color: hsl(278, 64%, 53%);
+}
+
 .card h2 img {
   grid-column: 3 / 3;
 }
