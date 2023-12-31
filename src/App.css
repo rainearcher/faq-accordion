@@ -36,11 +36,30 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  color: hsl(292, 42%, 14%);
 }
 
 .card h1 img {
   width: 25px;
   margin-right: 20px; 
+}
+
+.card h2 {
+  color: hsl(292, 42%, 14%);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 80% 10% 10%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card h2 p {
+  margin: 0;
+  grid-column: 1 / 1;
+}
+
+.card h2 img {
+  grid-column: 3 / 3;
 }
 
 .attribution { 

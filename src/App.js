@@ -1,5 +1,6 @@
 import './App.css';
-import starIcon from './icon-star.svg'
+import starIcon from './icon-star.svg';
+import minusIcon from './icon-minus.svg';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div className="card">
         
         <h1><img src={starIcon}/>FAQs</h1>
-        What is Frontend Mentor, and how will it help me?
+        <h2><p>What is Frontend Mentor, and how will it help me? </p><img src={minusIcon}/></h2>
         Frontend Mentor offers realistic coding challenges to help developers improve their
         frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
         all levels and ideal for portfolio building.
