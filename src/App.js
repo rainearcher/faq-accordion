@@ -7,13 +7,14 @@ import { useState } from 'react';
 function QuestionAnswer({question, answer, showAnswer, onQuestionClick, index}) {
   const icon = showAnswer ? minusIcon : plusIcon;
   const displayStyle = showAnswer ? "inline-block" : "none"
+  const borderTopStyle = index == 0 ? "hidden" : "solid";
 
   function onClick() {
     onQuestionClick(index);
   }
 
   return (
-    <div className="QuestionAnswer">
+    <div className="QuestionAnswer" style={{borderTopStyle: borderTopStyle}}>
       <h2 onClick={onClick}><p>{question}</p><img src={icon}/></h2>
       <div className="answer" style={{display: displayStyle}}>
         {answer}
@@ -29,7 +30,7 @@ function App() {
       answer: `Frontend Mentor offers realistic coding challenges to help developers improve their
       frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
       all levels and ideal for portfolio building.`,
-      showAnswer: true
+      showAnswer: false
     },
     {
       question: "Is Frontend Mentor free?",
