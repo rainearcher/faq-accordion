@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/rainearcher/faq-accordion](https://github.com/rainearcher/faq-accordion)
+- Live Site URL: [https://rainearcher.github.io/faq-accordion/](https://rainearcher.github.io/faq-accordion/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [A Comlete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Great cheatsheet for flexbox.
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Great cheatsheet for flexbox.
 - [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Great cheatsheet for css grid.
 
 ## Author
