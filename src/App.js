@@ -84,12 +84,13 @@ function App() {
             showAnswer={showAnswer}
             onQuestionClick={onQuestionClick}
             index={index}
+            key={index}
           />)
         })}
       </div>
 
 
-      <div class="attribution">
+      <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/rainearcher">Raine Soriano</a>.
       </div>
