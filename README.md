@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/rainearcher/faq-accordion](https://github.com/rainearcher/faq-accordion)
-- Live Site URL: [https://rainearcher.github.io/faq-accordion/](https://rainearcher.github.io/faq-accordion/)
+- Live Site URL: [https://faq-accordion-rainearcher.vercel.app/](https://faq-accordion-rainearcher.vercel.app/)
 
 ## My process
 
